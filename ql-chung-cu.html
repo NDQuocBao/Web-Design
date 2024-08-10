@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quản lý chung cư</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="images/logo.png"/>
 </head>
 <body>
-    
+    <header class="flex">
+        <img src="images/logo.png" alt="Logo">
+        <h1>Masteri Centre Point</h1>
+        <div></div>
+    </header>
+    <nav class="flex">
+        <ul class="menu flex">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="sub">
+                <a href="#">Tin tức</a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Sự kiện</a></li>
+                    <li><a href="#">Thông báo</a></li>
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">Dịch vụ</a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Bảo trì</a></li>
+                    <li><a href="#">Vệ sinh</a></li>
+                    <li><a href="#">An ninh</a></li>
+                    <li><a href="#">Chăm sóc khách hàng</a></li>
+                    <li><a href="#">Mua thuê căn hộ</a></li>
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">Khách hàng</a>
+                <ul class="menu subcontent">
+                    <li><a href="#">Thanh toán</a></li>
+                    <li><a href="#">Thông tin</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <ul class="menu flex">
+            <li><input type="text" placeholder="Tìm kiếm..."></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/banner_1.jpg" alt="Banner 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/banner_2.jpg" alt="Banner 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/banner_3.jpg" alt="Banner 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/banner_4.jpg" alt="Banner 4">
+                </div>
+            </div>
+            <button class="prev buttons"><i class="fa-solid fa-caret-left"></i></button>
+            <button class="next buttons"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </section>
+    <header class="flex">
+        <div>
+            <h1 class="title">Giới thiệu</h1>
+            <div>
+                <p>
+                    Masteri Centre Point & LUMIÈRE Boulevard đã đón cư dân về ở, kiến tạo cộng đồng sống văn minh. Khách hàng mua căn hộ bây giờ có thể “Xem tận mắt - Chạm tận tay” đến từng chi tiết bên trong căn nhà tương lai của mình và chiêm ngưỡng hệ cảnh quan đậm chất resort ngay trước nhà. 
+                    Môi trường sống được bao bọc trong màu xanh của thiên nhiên khoáng đạt chính là điểm nhấn thiết kế của phân khu căn hộ Masterise Homes - Được thực hiện bởi các đối tác hàng đầu thế giới như TANGE Associates (Nhật Bản), Studio HBA (Mỹ), Landsculptor (Thái Lan), Mace (Anh).
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
