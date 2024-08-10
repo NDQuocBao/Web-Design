@@ -299,3 +299,29 @@ footer {
     margin-top: 5px;
     border-top: 2px solid gray;
 }
+
+footer > div {
+    display: flex;
+}
+
+footer > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    border-top: 1px solid white;
+}
+
+/*CSS go to top*/
+div#gototop {
+    position: fixed;
+    background-color: rgb(0, 255, 0, 0.5);
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    z-index: 9999;
+}
+
+div#gototop a {
+    display: block;
+    padding: 20px 20px;
+}

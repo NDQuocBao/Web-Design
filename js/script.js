@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.carousel-slide');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
@@ -28,3 +29,23 @@ prevButton.addEventListener('click', () => {
 setInterval(() => {
     showSlide(currentIndex + 1);
 }, 4000);
+
+
+window.onscroll = function () {
+    let gototop = document.getElementById("gototop");
+    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+        gototop.style.display = "block";
+    }
+    else {
+        gototop.style.display = "none";
+    }
+}
+
+function goToTop() {
+    let timer = setInterval(function () {
+        document.documentElement.scrollTop -= 20;
+        if (document.documentElement.scrollTop <= 0)
+            clearInterval(timer);
+    },10)   
+}
+
