@@ -146,15 +146,20 @@ div.service {
     width: 20%;
     text-align: center;
     position: relative;
+    
 }
 
 div.service img {
     width: 100%;
+    border-radius: 5%;
+}
+
+div.service:hover a {
+    display: block;
 }
 
 div.name > a {
     text-decoration: none;
-    display: block;
     background-color: #588157;
     color: white;
     font-weight: bolder;
@@ -163,18 +168,19 @@ div.name > a {
     bottom: 0;
     width: 100%;
     padding: 10px 0;
+    display: none;
 }
 
 /*CSS SECTION*/
 section.main {
     display: flex;
     margin-top: 50px;
-    height: 459px;
+    height: 460px;
 }
 
 div.posts {
     display: flex;
-    width: 85%;
+    width: 70%;
     height: 100%;
     border: 2px solid lightgray;
     border-radius: 3px;
@@ -199,6 +205,7 @@ div.titles > h3 {
 
 div.article {
     height: 80%;
+    padding: 5px;
 }
 
 div.article > div {
@@ -264,7 +271,7 @@ div.post  a {
 }
 
 div.support {
-    width: 14%;
+    width: 29%;
     margin-left: 1%;
     text-align: center;
     position: relative;
@@ -280,14 +287,18 @@ div.input-support {
 
 }
 
+div.input-support .titles {
+    height: 20%;
+}
+
 div.input {
-    margin-top: 4%;
-    height: 18%;
+    margin-top: 1%;
+    height: 19%;
 }
 
 div.input > input {
     width: 90%;
-    height: 50%;
+    height: 65%;
     border-radius: 10px;
 }
 
@@ -297,6 +308,7 @@ button#sp {
     border-radius: 10px;
     background: linear-gradient(blue, lightblue);
 }
+
 
 /*CSS FOOTER*/
 footer {
@@ -332,4 +344,77 @@ div#gototop a {
     display: block;
     padding: 20px 20px;
     color: white;
+}
+
+
+@media screen and (max-width: 440px) {
+    .flex {
+        flex-direction: column;
+
+    }
+
+    nav.flex {
+        align-items: flex-start;
+    }
+
+    #left {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #left li {
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+
+    #right {
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    /*RESPONSIVE PHẦN MAIN*/
+    h1 ~ div {
+        width: 100%;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .services div.service {
+        width: 45%;
+        margin-top: 5%;
+    }
+
+    section.main {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 1000px;
+    }
+
+    div.posts {
+        width: 100%;
+        height: 50%;
+    }
+
+    div.article div.img {
+        width: 100%;
+        float: none;
+    }
+
+    div.support {
+        height: 50%;
+        width: 70%;
+    }
+
+    div.input-support {
+        height: 70%;
+        top: 15%;
+    }
+
+    div.article p {
+        -webkit-line-clamp: 10;
+    }
+    
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="shortcut icon" href="images/logo.png"/>
 </head>
-<body>
+<body onload="init()">
     <div id="gototop">
         <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
@@ -18,7 +18,7 @@
         <div></div>
     </header>
     <nav class="flex">
-        <ul class="menu flex">
+        <ul class="menu flex" id="left">
             <li><a href="#">TRANG CHỦ</a></li>
             <li class="sub">
                 <a href="#">TIN TỨC</a>
@@ -46,7 +46,7 @@
             </li>
             <li><a href="#">LIÊN HỆ</a></li>
         </ul>
-        <ul class="menu flex">
+        <ul class="menu flex" id="right">
             <li><input type="text" placeholder="Tìm kiếm..."></li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
@@ -88,19 +88,19 @@
         <div class="services">
             <div class="service">
                 <img src="images/ve-sinh.jpeg" alt="vesinh"/>
-                <div class="name"><a href="#">VỆ SINH</a></div>
+                <div class="name" id="0"><a href="#">VỆ SINH</a></div>
             </div>
             <div class="service">
                 <img src="images/bao-tri.jpg" alt="baotri"/>
-                <div class="name"><a href="#">BẢO TRÌ</a></div>
+                <div class="name" id="1"><a href="#">BẢO TRÌ</a></div>
             </div>
             <div class="service">
                 <img src="images/an-ninh.jpg" alt="anninh"/>
-                <div class="name"><a href="#">AN NINH - PCCC</a></div>
+                <div class="name" id="2"><a href="#">AN NINH - PCCC</a></div>
             </div>
             <div class="service">
                 <img src="images/chamsocKH.jpg" alt="CSKH"/>
-                <div class="name"><a href="#">CHĂM SÓC KHÁCH HÀNG</a></div>
+                <div class="name" id="3"><a href="#">CHĂM SÓC KHÁCH HÀNG</a></div>
             </div>
         </div>
     </nav>
@@ -139,12 +139,13 @@
         </div>
         <div class="support">
             <div class="input-support">
-                <div class="titles"><h3>TƯ VẤN, HỖ TRỢ</h3></div>
+                <div class="titles"><h3>TƯ VẤN</h3></div>
                 <div class="input"><input type="text" placeholder="Họ và tên" value=""/></div>
                 <div class="input"><input type="text" placeholder="Số điện thoại" value=""/></div>
                 <div class="input"><input type="text" placeholder="Email" value=""/></div>
                 <div class="input"><button id="sp">GỬI</button></div>
             </div>
+            
         </div>
     </section>
     <footer>
