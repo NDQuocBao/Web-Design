@@ -15,8 +15,14 @@ header > h1 {
 }
 
 nav.flex {
-    background-color: #3A5A40;
+    background-color: #218c74;
     margin: 10px 0;
+}
+
+div.navbars {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 ul.menu {
@@ -34,11 +40,11 @@ ul.menu > li > a {
 }
 
 ul.menu > li > a:hover {
-    color: #ffb57e;
+    color: #ffda79;
 }
 
 ul.menu > li > a:hover > i {
-    color: #ffb57e;
+    color: #ffda79;
 }
 
 ul.menu > li > input {
@@ -57,9 +63,13 @@ ul.menu > li > input {
     background-color: white;
 }
 
+.subcontent {
+    width: max-content;
+}
+
 .sub:hover .subcontent {
     display: block;
-    background-color: #3A5A40;
+    background-color: #33d9b2;
     z-index: 1;
 }
 
@@ -68,7 +78,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #00352d; */
 }
 
 .carousel {
@@ -160,7 +169,7 @@ div.service:hover a {
 
 div.name > a {
     text-decoration: none;
-    background-color: #588157;
+    background-color: #218c74;
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -196,7 +205,7 @@ div.newpost {
 
 .titles {
     padding: 10px;
-    background-color: #DAD7CD;
+    background-color: #227093;
 }
 
 div.titles > h3 {
@@ -211,7 +220,7 @@ div.article {
 div.article > div {
     width: 50%;
     float: left;
-    margin: 5px;
+    padding: 10px;
     
 }
 
@@ -306,7 +315,7 @@ button#sp {
     width: 50%;
     padding: 2px;
     border-radius: 10px;
-    background: linear-gradient(blue, lightblue);
+    background-color: #b33939;
 }
 
 
@@ -333,7 +342,7 @@ footer > h2 {
 /*CSS go to top*/
 div#gototop {
     position: fixed;
-    background-color: #588157;
+    background-color: #218c74;
     right: 20px;
     bottom: 20px;
     display: none;
@@ -347,74 +356,3 @@ div#gototop a {
 }
 
 
-@media screen and (max-width: 440px) {
-    .flex {
-        flex-direction: column;
-
-    }
-
-    nav.flex {
-        align-items: flex-start;
-    }
-
-    #left {
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    #left li {
-        border-bottom: 1px solid white;
-        width: 100%;
-    }
-
-    #right {
-        flex-direction: row;
-        width: 100%;
-    }
-
-
-    /*RESPONSIVE PHẦN MAIN*/
-    h1 ~ div {
-        width: 100%;
-    }
-
-    .services {
-        flex-wrap: wrap;
-    }
-
-    .services div.service {
-        width: 45%;
-        margin-top: 5%;
-    }
-
-    section.main {
-        flex-wrap: wrap;
-        margin-top: 10px;
-        height: 1000px;
-    }
-
-    div.posts {
-        width: 100%;
-        height: 50%;
-    }
-
-    div.article div.img {
-        width: 100%;
-        float: none;
-    }
-
-    div.support {
-        height: 50%;
-        width: 70%;
-    }
-
-    div.input-support {
-        height: 70%;
-        top: 15%;
-    }
-
-    div.article p {
-        -webkit-line-clamp: 10;
-    }
-    
-}

@@ -1,0 +1,99 @@
+/*Nút ẩn hiện menu*/
+div#toggle{
+    background-color: #218c74;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 0;
+    display: none;
+}
+
+#toggle {
+    text-align: center;
+    width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    /*MENU*/
+    .flex {
+        flex-direction: column;
+    }
+
+    div#toggle{
+        display: block;
+    }
+    
+    nav.flex {
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    div.navbars {
+        flex-direction: column;
+        display: none;
+    }
+
+    div.navbars.show {
+        display: block;
+    }
+
+    #left {
+        align-items: flex-start;
+        width: 100%;
+        
+    }
+
+    .subcontent {
+        top: 0;
+        left: 200px;
+    }
+
+    #right {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /*giới thiệu*/
+    h1 ~ div {
+        width: 100%;
+    }
+    /*Post and Support*/
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .services div.service {
+        width: 45%;
+        margin-top: 5%;
+    }
+
+    section.main {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 1000px;
+    }
+
+    div.posts {
+        width: 100%;
+        height: 50%;
+    }
+
+    div.article div.img {
+        width: 100%;
+        float: none;
+    }
+
+    div.support {
+        height: 50%;
+        width: 70%;
+    }
+
+    div.input-support {
+        height: 70%;
+        top: 15%;
+    }
+
+    div.article p {
+        -webkit-line-clamp: 4;
+    }
+    
+}

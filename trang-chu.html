@@ -6,6 +6,7 @@
     <title>Quản lý chung cư</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="shortcut icon" href="images/logo.png"/>
 </head>
 <body onload="init()">
@@ -18,39 +19,44 @@
         <div></div>
     </header>
     <nav class="flex">
-        <ul class="menu flex" id="left">
-            <li><a href="#">TRANG CHỦ</a></li>
-            <li class="sub">
-                <a href="#">TIN TỨC</a>
-                <ul class="menu subcontent">
-                    <li><a href="#">Sự kiện</a></li>
-                    <li><a href="#">Thông báo</a></li>
-                </ul>
-            </li>
-            <li class="sub">
-                <a href="#">DỊCH VỤ</a>
-                <ul class="menu subcontent">
-                    <li><a href="#">Bảo trì</a></li>
-                    <li><a href="#">Vệ sinh</a></li>
-                    <li><a href="#">An ninh</a></li>
-                    <li><a href="#">Chăm sóc khách hàng</a></li>
-                    <li><a href="#">Mua thuê căn hộ</a></li>
-                </ul>
-            </li>
-            <li class="sub">
-                <a href="#">KHÁCH HÀNG</a>
-                <ul class="menu subcontent">
-                    <li><a href="#">Thanh toán</a></li>
-                    <li><a href="#">Thông tin</a></li>
-                </ul>
-            </li>
-            <li><a href="#">LIÊN HỆ</a></li>
-        </ul>
-        <ul class="menu flex" id="right">
-            <li><input type="text" placeholder="Tìm kiếm..."></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-        </ul>
+        <div id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbars">
+            <ul class="menu flex" id="left">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li class="sub">
+                    <a href="#">TIN TỨC</a>
+                    <ul class="menu subcontent">
+                        <li><a href="#">Sự kiện</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">DỊCH VỤ</a>
+                    <ul class="menu subcontent">
+                        <li><a href="#">Bảo trì</a></li>
+                        <li><a href="#">Vệ sinh</a></li>
+                        <li><a href="#">An ninh</a></li>
+                        <li><a href="#">Chăm sóc khách hàng</a></li>
+                        <li><a href="#">Mua thuê căn hộ</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">KHÁCH HÀNG</a>
+                    <ul class="menu subcontent">
+                        <li><a href="#">Thanh toán</a></li>
+                        <li><a href="#">Thông tin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+            <ul class="menu flex" id="right">
+                <li><input type="text" placeholder="Tìm kiếm..."></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>   
     </nav>
     <section>
         <div class="carousel">

@@ -30,9 +30,15 @@ function init() {
     setInterval(() => {
         showSlide(currentIndex + 1);
     }, 4000);
+    /*ẩn hiện menu*/
+    var toggle = document.getElementById("toggle");
+    toggle.onclick = function () {
+        var menu = document.querySelector(".navbars");
+        menu.classList.toggle("show")
+    }
 
 }
-
+/*Go To Top*/
 window.onscroll = function () {
     let gototop = document.getElementById("gototop");
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
