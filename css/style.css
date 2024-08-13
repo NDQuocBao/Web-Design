@@ -29,7 +29,6 @@ ul.menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 ul.menu > li > a {
@@ -49,8 +48,8 @@ ul.menu > li > a:hover > i {
 
 ul.menu > li > input {
     border-radius: 10px;
-    background-color: white;
-    color: black;
+    height: 35px;
+    width: 200px;
 }
 
 .sub {
@@ -86,7 +85,6 @@ section {
     max-width: 1300px;
     overflow: hidden;
     border-radius: 10px;
-    
 }
 
 .carousel-container {
@@ -154,8 +152,12 @@ div.services {
 div.service {
     width: 20%;
     text-align: center;
-    position: relative;
-    
+    position: relative; 
+}
+
+div.service:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
 }
 
 div.service img {
@@ -189,7 +191,7 @@ section.main {
 
 div.posts {
     display: flex;
-    width: 70%;
+    width: 85%;
     height: 100%;
     border: 2px solid lightgray;
     border-radius: 3px;
@@ -221,7 +223,6 @@ div.article > div {
     width: 50%;
     float: left;
     padding: 10px;
-    
 }
 
 div.article > div > img {
@@ -266,7 +267,6 @@ div.post > div {
 
 div.post  a {
     height: 10%;
-    
 }
 
 .more {
@@ -280,7 +280,7 @@ div.post  a {
 }
 
 div.support {
-    width: 29%;
+    width: 14%;
     margin-left: 1%;
     text-align: center;
     position: relative;
@@ -293,7 +293,11 @@ div.input-support {
     width: 100%;
     height: 50%;
     top: 20%;
+}
 
+div.input-support h3 {
+    height: 100%;
+    text-align: center;
 }
 
 div.input-support .titles {
@@ -303,46 +307,65 @@ div.input-support .titles {
 div.input {
     margin-top: 1%;
     height: 19%;
+    padding: 2px 10px;
 }
 
 div.input > input {
-    width: 90%;
-    height: 65%;
+    width: 100%;
+    height: 70%;
     border-radius: 10px;
 }
 
 button#sp {
     width: 50%;
-    padding: 2px;
+    height: 80%;
     border-radius: 10px;
-    background-color: #b33939;
+    background: linear-gradient(#3867d6,#4b7bec);
 }
 
 
 /*CSS FOOTER*/
 footer {
     background-color: #344E41;
-    color: white;
-    height: 200px;
+    color: #fff;
+    max-height: 200px;
     margin-top: 5px;
     border-top: 2px solid gray;
 }
 
 footer > div {
     display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    padding: 10px;
+}
+
+div.conect a {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.fb {
+    color: blue;
+}
+
+.ytb {
+    color: red;
 }
 
 footer > h2 {
     text-align: center;
     margin: 0;
-    padding: 30px;
+    padding: 20px;
     border-top: 1px solid white;
 }
 
 /*CSS go to top*/
 div#gototop {
     position: fixed;
-    background-color: #218c74;
+    background-color: #12CBC4;
     right: 20px;
     bottom: 20px;
     display: none;
@@ -354,5 +377,3 @@ div#gototop a {
     padding: 20px 20px;
     color: white;
 }
-
-

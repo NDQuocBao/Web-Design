@@ -12,6 +12,7 @@ div#toggle{
     width: 10%;
 }
 
+/*TABLET*/
 @media screen and (max-width: 768px) {
     /*MENU*/
     .flex {
@@ -30,10 +31,12 @@ div#toggle{
     div.navbars {
         flex-direction: column;
         display: none;
+        transition: display ease 5s;
     }
 
     div.navbars.show {
         display: block;
+        
     }
 
     #left {
@@ -50,6 +53,7 @@ div#toggle{
     #right {
         flex-direction: row;
         width: 100%;
+        justify-content: flex-end;
     }
 
     /*giới thiệu*/
@@ -84,7 +88,7 @@ div#toggle{
 
     div.support {
         height: 50%;
-        width: 70%;
+        width: 50%;
     }
 
     div.input-support {
@@ -95,5 +99,48 @@ div#toggle{
     div.article p {
         -webkit-line-clamp: 4;
     }
+}
+
+/*MOBILE*/
+@media  screen and (max-width:426px) {
     
+   div#toggle {
+    padding: 15px;
+   }
+
+    .carousel {
+        width: 100%;
+    }
+
+    div.article p {
+        -webkit-line-clamp: 10;
+    }
+
+    div.support {
+        width: 70%;
+    }
+
+    /*FOOTER*/
+    footer {
+        max-height: 1100px;
+    }
+
+    footer > div {
+        flex-direction: column;
+    }
+
+    footer > div div {
+        padding: 15px;
+    } 
+}
+
+@media  screen and (max-width:476px) {
+    header > h1 {
+        font-size: 25px;
+    }
+
+    .subcontent {
+        top: 0;
+        left: 150px;
+    }
 }
