@@ -16,7 +16,7 @@ header > h1 {
 
 nav.flex {
     background-color: #218c74;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 div.navbars {
@@ -36,10 +36,12 @@ ul.menu > li > a {
     padding: 1.5rem;
     text-decoration: none;
     color: white;
+    transition: background-color 0.5s;
 }
 
 ul.menu > li > a:hover {
     color: #ffda79;
+    background-color: #218c74;
 }
 
 ul.menu > li > a:hover > i {
@@ -64,6 +66,16 @@ ul.menu > li > input {
 
 .subcontent {
     width: max-content;
+}
+
+.subcontent::after {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent transparent #33d9b2 transparent ;
+    left: 20%;
+    bottom: 100%;
 }
 
 .sub:hover .subcontent {

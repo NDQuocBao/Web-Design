@@ -38,14 +38,25 @@ function init() {
     }
 
 }
-/*Go To Top*/
+
 window.onscroll = function () {
-    let gototop = document.getElementById("gototop");
+    var gototop = document.getElementById("gototop");
+    var menu = document.getElementById("menu");
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+        //Go to top
         gototop.style.display = "block";
+        //Menu
+        menu.style.position = "fixed";
+        menu.style.zIndex = 9;
+        menu.style.top = 0;
+        menu.style.left = 0;
+        menu.style.right = 0;
+        menu.style.opacity = 0.9;
     }
     else {
         gototop.style.display = "none";
+
+        menu.style.position = "relative";
     }
 }
 
