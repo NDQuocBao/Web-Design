@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="shortcut icon" href="images/logo.png"/>
 </head>
-<body onload="init()">
+<body>
     <div id="gototop">
         <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
@@ -24,22 +24,15 @@
         </div>
         <div class="navbars">
             <ul class="menu flex" id="left">
-                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="trang-chu.html">TRANG CHỦ</a></li>
+                <li><a href="tin-tuc.html">TIN TỨC</a></li>
                 <li class="sub">
-                    <a href="#">TIN TỨC</a>
+                    <a href="dich-vu.html">DỊCH VỤ</a>
                     <ul class="menu subcontent">
-                        <li><a href="#">Sự kiện</a></li>
-                        <li><a href="#">Thông báo</a></li>
-                    </ul>
-                </li>
-                <li class="sub">
-                    <a href="#">DỊCH VỤ</a>
-                    <ul class="menu subcontent">
-                        <li><a href="#">Bảo trì</a></li>
-                        <li><a href="#">Vệ sinh</a></li>
-                        <li><a href="#">An ninh</a></li>
-                        <li><a href="#">Chăm sóc khách hàng</a></li>
-                        <li><a href="#">Mua thuê căn hộ</a></li>
+                        <li><a href="dich-vu.html#ve-sinh">Vệ Sinh</a></li>
+                        <li><a href="dich-vu.html#bao-tri">Bảo Trì</a></li>
+                        <li><a href="dich-vu.html#thanh-toan">Thanh Toán</a></li>
+                        <li><a href="dich-vu.html#khac">Khác</a></li>
                     </ul>
                 </li>
                 <li class="sub">
@@ -51,6 +44,7 @@
                 </li>
                 <li><a href="#">LIÊN HỆ</a></li>
             </ul>
+            </ul>
             <ul class="menu flex" id="right">
                 <li><input type="text" placeholder="Tìm kiếm..."></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
@@ -58,7 +52,7 @@
             </ul>
         </div>   
     </nav>
-    <section>
+    <section class="banner">
         <div class="carousel">
             <div class="carousel-container">
                 <div class="carousel-slide">
@@ -113,39 +107,47 @@
     <section class="main">
         <div class="posts">
             <div class="newpost">
-                <div class="titles"><h3>Tin nổi bật</h3></div>
-                <div class="article">
-                    <div class="img"><img src="images/articleimg.jpeg" alt="news"/></div>
-                    <p>Dành hơn một năm để phân tích và nghiên cứu về nhiều dự án tại TP.HCM để tìm nơi an cư lý tưởng cho gia đình nhỏ, anh Tiến Nguyễn (32 tuổi, chuyên viên tư vấn tài chính) và vợ quyết định chọn Masteri Centre Point là ngôi nhà gắn bó lâu dài từ khoảng đầu năm 2023. Vợ chồng anh đã nhận nhà vào khoảng đầu năm nay và rất hài lòng về quyết định của mình.
-
-                        “Ngoài tiện ích compound riêng tư hay vị trí thuận lợi, yếu tố khiến tôi hài lòng khi sinh sống tại Masteri Centre Point chính là môi trường sống lý tưởng cùng cộng đồng cư dân cùng gu. Khả năng đáp ứng mọi nhu cầu từ an cư đến nghỉ dưỡng càng khiến vợ chồng tôi thêm yêu quý nơi này”, anh Tiến Nguyễn bày tỏ.
-                        
-                        Vốn được xem là biểu tượng sống sang trọng và là khu compound đáng sống nhất khu Đông TP. Hồ Chí Minh, Masteri Centre Point không chỉ là chốn an cư mà còn mang đến cộng đồng cư dân ưu tú, gắn kết.</p>
-                    <a class="more" href="#">Xem thêm</a>
+                <div class="titles">
+                    <h3>Tin nổi bật</h3>
                 </div>
-                <div class="day">09/8/2024</div>
+                <div class="article">
+                    <div class="img"><img src="images/articleimg.jpeg" alt="news" /></div>
+                    <p>Dành hơn một năm để phân tích và nghiên cứu về nhiều dự án tại TP.HCM để tìm nơi an cư lý tưởng
+                        cho gia đình nhỏ, anh Tiến Nguyễn (32 tuổi, chuyên viên tư vấn tài chính) và vợ quyết định chọn
+                        Masteri Centre Point là ngôi nhà gắn bó lâu dài từ khoảng đầu năm 2023. Vợ chồng anh đã nhận nhà
+                        vào khoảng đầu năm nay và rất hài lòng về quyết định của mình.
+
+                        “Ngoài tiện ích compound riêng tư hay vị trí thuận lợi, yếu tố khiến tôi hài lòng khi sinh sống
+                        tại Masteri Centre Point chính là môi trường sống lý tưởng cùng cộng đồng cư dân cùng gu. Khả
+                        năng đáp ứng mọi nhu cầu từ an cư đến nghỉ dưỡng càng khiến vợ chồng tôi thêm yêu quý nơi này”,
+                        anh Tiến Nguyễn bày tỏ.
+
+                        Vốn được xem là biểu tượng sống sang trọng và là khu compound đáng sống nhất khu Đông TP. Hồ Chí
+                        Minh, Masteri Centre Point không chỉ là chốn an cư mà còn mang đến cộng đồng cư dân ưu tú, gắn
+                        kết.
+                    </p>     
+                </div>     
             </div>
             <div class="post">
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-                    <a class="more" href="#">Xem thêm</a>                    
-                    <div class="day">1/1/1111</div>
+                    <a href="#">Masterise Homes khép lại ‘một năm vượt kỳ vọng'</a>
                 </div>
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-                    <a class="more" href="#">Xem thêm</a>
-                    <div class="day">1/1/1111</div>
+                    <a href="#">Căn hộ 2 phòng ngủ khu Đông TP.HCM hút gia đình trẻ</a>
                 </div>
                 <div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-                    <a class="more" href="#">Xem thêm</a>
-                    <div class="day">1/1/1111</div>
+                    <a href="#">Masterise Homes liên tục bàn giao 7 dự án trong năm 2023</a>
+                </div>
+                <div>
+                    <a href="#">Masterise Homes liên tục bàn giao 7 dự án trong năm 2023</a>
                 </div>
             </div>
         </div>
         <div class="support">
             <div class="input-support">
-                <div class="titles"><h3>TƯ VẤN</h3></div>
+                <div class="titles">
+                    <h3>TƯ VẤN</h3>
+                </div>
                 <div class="input"><input type="text" placeholder="Họ và tên" value=""/></div>
                 <div class="input"><input type="text" placeholder="Số điện thoại" value=""/></div>
                 <div class="input"><input type="text" placeholder="Email" value=""/></div>

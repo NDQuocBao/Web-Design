@@ -84,7 +84,7 @@ ul.menu > li > input {
     z-index: 1;
 }
 
-section {
+section.banner {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -253,43 +253,33 @@ div.newpost > div.day {
     width: 100%;
     bottom: 0;
 }
-
+/*-------------------------*/
+/*style bản tin phụ*/
 div.post {
     width: 40%;
     height: 100%;
 }
 
-div.post  p {
-    overflow: hidden;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    margin: 0;
-    height: 70%;
-    border-top: 1px solid lightgray;
+.post > div {
+    height: 25%;
+    border-bottom: 1px dashed gray;
 }
 
-div.post > div.day {
-    height: 10%;
+.post > div:last-child {
+    border-bottom: none;
 }
 
-div.post > div {
-    height: 33.33%;
-}
-
-div.post  a {
-    height: 10%;
-}
-
-.more {
+.post a {
     text-decoration: none;
-    color:darkblue; 
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
 }
 
-.day {  
-    padding: 5px;
-    font-style: italic;
+.post a:hover {
+    color: #4b7bec;
 }
+/*---------------------------*/
 
 div.support {
     width: 14%;

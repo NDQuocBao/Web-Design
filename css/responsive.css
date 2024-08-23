@@ -9,7 +9,7 @@ div#toggle{
 
 #toggle {
     text-align: center;
-    width: 10%;
+    width: 20%;
 }
 
 /*TABLET*/
@@ -36,7 +36,6 @@ div#toggle{
 
     div.navbars.show {
         display: block;
-        
     }
 
     #left {
@@ -99,6 +98,39 @@ div#toggle{
     div.article p {
         -webkit-line-clamp: 4;
     }
+
+    section.container {
+        flex-direction: column;
+    }
+
+    div.menu-ser {
+        width: 100%;
+    }
+
+    div.contents-ser {
+        width: 100%;
+    }
+
+    div.content-ser {
+        flex-direction: column;
+    }
+
+    div.content-ser div.ser {
+        width: 80%;
+    }
+
+    div.form {
+        width: 100%;
+        border: none;
+    }
+
+    div.form input {
+        padding: 5px;
+    }
+
+    #btn-ser {
+        height: 10%;
+    }
 }
 
 /*MOBILE*/
@@ -132,6 +164,39 @@ div#toggle{
     footer > div div {
         padding: 15px;
     } 
+    /*DỊCH VỤ*/
+    section.container {
+        flex-direction: column;
+    }
+
+    div.menu-ser {
+        width: 100%;
+    }
+
+    div.contents-ser {
+        width: 100%;
+    }
+
+    div.content-ser {
+        flex-direction: column;
+    }
+
+    div.content-ser div.ser {
+        width: 80%;
+    }
+
+    div.form {
+        width: 100%;
+        border: none;
+    }
+
+    div.form input {
+        padding: 5px;
+    }
+
+    #btn-ser {
+        height: 15%;
+    }
 }
 
 @media  screen and (max-width:476px) {

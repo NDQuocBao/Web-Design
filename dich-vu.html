@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý chung cư</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style-dich-vu.css"/>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+</head>
+
+<body>
+    <div id="gototop">
+        <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <header class="flex">
+        <img src="images/logo.png" alt="Logo">
+        <h1>MASTERI CENTRE POINT</h1>
+        <div></div>
+    </header>
+    <nav class="flex" id="menu">
+        <div id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbars">
+            <ul class="menu flex" id="left">
+                <li><a href="trang-chu.html">TRANG CHỦ</a></li>
+                <li><a href="tin-tuc.html">TIN TỨC</a></li>
+                <li class="sub">
+                    <a href="#">DỊCH VỤ</a>
+                    <ul class="menu subcontent">
+                        <li><a href="dich-vu.html#ve-sinh">Vệ Sinh</a></li>
+                        <li><a href="dich-vu.html#bao-tri">Bảo Trì</a></li>
+                        <li><a href="dich-vu.html#thanh-toan">Thanh Toán</a></li>
+                        <li><a href="dich-vu.html#khac">Khác</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="#">KHÁCH HÀNG</a>
+                    <ul class="menu subcontent">
+                        <li><a href="#">Thanh toán</a></li>
+                        <li><a href="#">Thông tin</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+            <ul class="menu flex" id="right">
+                <li><input type="text" placeholder="Tìm kiếm..."></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="menu-ser">
+            <h2>DỊCH VỤ</h2>
+            <ul class="menu-service">
+                <li class="active"><a href="#ve-sinh" id="ser1">Vệ sinh</a></li>
+                <li><a href="#bao-tri" id="ser2">Bảo trì - Sửa chữa</a></li>
+                <li><a href="#thanh-toan" id="ser3">Thanh toán</a></li>
+                <li><a href="#khac" id="ser4">Khác</a></li>
+            </ul>
+        </div>
+        <div class="contents-ser">
+            <div class="content-ser" id="ve-sinh">
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4>Dọn Dẹp Nhà</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Giặt Ủi</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Vệ Sinh Máy Lạnh</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Tổng Vệ Sinh</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+            </div>
+            <div class="content-ser" id="bao-tri">
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4>Hệ Thống Điện</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Hệ Thống Nước</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Internet</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+                <div class="ser">
+                    <img src="images/giat-ui.jpg" alt="giat-ui"/>
+                    <h4>Cơ Sở Vật Chất</h4>
+                    <button id="btn-ser">Đặt lịch ngay</button>
+                </div>
+            </div>
+            <div class="content-ser" id="thanh-toan">
+                <div id="no-paid">
+                    <h2>HÓA ĐƠN</h2>
+                    <div class="filter">
+                        <div><button id="all" >Tất cả</button></div>
+                        <div><button id="home">Tiền Nhà</button></div>
+                        <div><button id="dien">Tiền điện</button></div>
+                        <div><button id="nuoc">Tiền nước</button></div>
+                        <div><button id="others">Khác</button></div>
+                    </div>
+                    <div class="bill home all">
+                        <h3>Tiền nhà</h3>
+                        <p>Số tiền cần thanh toán: 5.0000.0000VNĐ</p>
+                        <p>Ngày xuất hóa đơn: 22/08/2024</p>
+                        <button id="pay">Thanh toán</button>
+                    </div>
+                    <div class="bill nuoc all">
+                        <h3>Tiền nước</h3>
+                        <p>Số tiền cần thanh toán: 5.0000.0000VNĐ</p>
+                        <p>Ngày xuất hóa đơn: 22/08/2024</p>
+                        <button id="pay">Thanh toán</button>
+                    </div>
+                    <div class="bill dien all">
+                        <h3>Tiền điện</h3>
+                        <p>Số tiền cần thanh toán: 5.0000.0000VNĐ</p>
+                        <p>Ngày xuất hóa đơn: 22/08/2024</p>
+                        <button id="pay">Thanh toán</button>
+                    </div>
+                </div>
+                <div class="payment-methods">  
+                    <div class="payment-method">
+                        <a href="#"><img src="images/viettel.png" alt="pay"/></a>
+                    </div>
+                    <div class="payment-method">
+                        <a href="#"><img src="images/visa-master.png" alt="pay"/></a>
+                    </div>
+                    <div class="payment-method">
+                        <a href="#"><img src="images/atm.png" alt="pay"/></a>
+                    </div>
+                    <div>
+                        <button id="cancel-pay">HỦY THANH TOÁN</button>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit-pay">XÁC NHẬN THANH TOÁN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-ser" id="khac">
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4><a href="javascript:;">Hồ Bơi</a></h4>
+                </div>
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4><a href="javascript:;">Phòng Gym</a></h4>
+                </div>
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4><a href="javascript:;">Khu Vui Chơi Trẻ Em</a></h4>
+                </div>
+                <div class="ser">
+                    <img src="images/don-dep.jpg" alt="giat-ui"/>
+                    <h4><a href="javascript:;">Khu Thể Thao</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h3>ĐẶT LỊCH</h3>
+            <div><input type="text" placeholder="Họ và tên" value=""/></div>
+            <div><input type="text" placeholder="Số điện thoại" value=""/></div>
+            <div><input type="text" placeholder="Số căn hộ" value=""/></div>
+            <div><input type="datetime" placeholder="Thời gian " value=""/></div>
+            <div><button type="submit" id="btn-form">XÁC NHẬN</button></div>
+            <div><button id="btn-form-cancel">HỦY</button></div>
+        </div> 
+    </section>
+    <footer>
+        <div>
+            <div>
+                <img src="images/logo.png" alt="logo" />
+            </div>
+            <div class="contact">
+                <h3>LIÊN HỆ:</h3>
+                <p>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</p>
+                <p>Email: Sales@masterisesaigon.com</p>
+            </div>
+            <div class="conect">
+                <h3>KẾT NỐI:</h3>
+                <a class="fb" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="ytb" href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <h2> &copy;Copyright 2024</h2>
+    </footer>
+</body>
+</html>

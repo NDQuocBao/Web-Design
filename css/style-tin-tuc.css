@@ -1,0 +1,59 @@
+section.news > h1  { 
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.news-content {
+    display: flex;
+    width: 90%;
+}
+
+.main-news {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+}
+
+div.main-news > p.title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+div.main-news > div {
+    width: 70%;
+}
+
+div.main-news > div > img {
+    width: 100%;
+}
+
+.others-news {
+    width: 30%;
+    text-align: justify;
+}
+
+div.others-news > div {
+    border-bottom: 2px solid gray;
+}
+
+div.others-news > div > div.titles {
+    width: fit-content;
+    border-radius: 10px 10px 0 0;
+}
+
+div.others-news a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+div.others-news a:hover {
+    color: #ffa801;
+}
+
+

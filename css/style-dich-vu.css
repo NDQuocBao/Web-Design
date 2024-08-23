@@ -1,0 +1,221 @@
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu-ser {
+    width: 30%;
+}
+
+.menu-service {
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    background-color: #218c74;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+ul.menu-service li {
+    list-style-type: none;
+    border-bottom: 2px solid black;
+}
+
+ul.menu-service li:last-child {
+    border-bottom: none;
+}
+
+ul.menu-service li > a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: white;
+}
+
+ul.menu-service li > a:hover {
+    color: #ffda79;
+    background-color: #33d9b2;
+}
+
+.contents-ser {
+    width: 70%;
+}
+
+.content-ser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+div.ser {
+    width: 40%;
+    background-color: #218c74;
+    margin-top: 5%;
+    position: relative;
+}
+
+div.ser h4 {
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+div.ser img {
+    width: 100%;
+}
+
+#btn-ser {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 15px;
+    background: #ffb142;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+#btn-ser:hover {
+    background-color: #fed330;
+}
+
+.form {
+    width: 20%;
+    border-left: 2px dashed black;
+    display: none;
+}
+.form h3 {
+    text-align: center;  
+}
+
+.form div {
+    margin: 5%;
+    height: 5%;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+}
+
+.form button#btn-form {
+    width: 100%;
+    padding: 5px;
+    background-color: #ffb142;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-form-cancel {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #33d9b2;
+}
+
+div.bill {
+    border: 2px solid gray;
+    background-color: #d1d8e0;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+div.bill h3 {
+    margin: 0;
+}
+
+div.bill button {
+    padding: 8px;
+    background-color: #f7b731;
+    border: none;
+    cursor: pointer;
+}
+
+div.bill button:hover {
+    background-color: #fed330;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+div.payment-method {
+    width: 30%;
+    text-align: center;
+}
+
+div.filter {
+    display: flex;
+}
+
+div.filter div {
+    padding: 8px;
+    background-color: #d1d8e0;
+    border: none;
+}
+
+div.filter div button {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+div.filter div button:hover {
+    background-color: #778ca3;
+}
+div.payment-method {
+    margin: 5px;
+}
+
+div.payment-method > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+div.payment-method > a:hover {
+    border: 1px solid red;
+}
+
+div.payment-method > a > img {
+    width: 100%;
+    height: 75px;
+}
+
+div.payment-methods button {
+    border: none;
+    padding: 10px;
+    margin: 15px;
+    background-color: #f7b731;
+    cursor: pointer;
+}
+
+.choose {
+    border: 2px solid red;
+}
+
+div#khac a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+div#khac a:hover {
+    color: #fed330;
+}
