@@ -198,133 +198,114 @@ div.name > a {
 section.main {
     display: flex;
     margin-top: 50px;
-    height: 460px;
+    height: fit-content;
+}
+/*NEWS*/
+div.news {
+    width: 70%;
 }
 
-div.posts {
-    display: flex;
-    width: 85%;
-    height: 100%;
-    border: 2px solid lightgray;
-    border-radius: 3px;
-}
-
-
-div.newpost {
-    width: 60%;
-    height: 100%;
-    position: relative;
-    border-right: 2px solid lightgray;
-}
-
-.titles {
+div.title {
+    background-color: #218c74;
     padding: 10px;
-    background-color: #227093;
+    width: fit-content;
+    border-radius: 25% 25% 0 0;
 }
 
-div.titles > h3 {
+div.title h3 {
     margin: 0;
 }
 
-div.article {
-    height: 80%;
-    padding: 5px;
+div.main-new {
+    border-top: 2px solid #218c74;
 }
 
-div.article > div {
-    width: 50%;
-    float: left;
-    padding: 10px;
-}
-
-div.article > div > img {
-    width: 100%;
-}
-
-div.article p {
-    overflow: hidden;
-    -webkit-line-clamp: 18;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-}
-
-div.newpost > div.day {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-/*-------------------------*/
-/*style bản tin phụ*/
-div.post {
+div.main-new > div:first-child {
     width: 40%;
-    height: 100%;
+    margin: auto;
+    padding: 1%;
+    margin-bottom: 2%;
+} 
+
+div.main-new img {
+    width: 100%;
 }
 
-.post > div {
-    height: 25%;
-    border-bottom: 1px dashed gray;
+div.main-new > div.date {
+    padding: 2%;
 }
 
-.post > div:last-child {
-    border-bottom: none;
+div.new-current {
+    display: flex;
+    border-top: 2px solid #218c74;
 }
 
-.post a {
+div.new {
+    margin: 2%;
+    text-align: justify;
+}
+
+div.new-image {
+    width: 70%;
+    margin: auto;
+}
+
+div.new img {
+    width: 100%;
+}
+
+div.new > a {
     text-decoration: none;
-    font-size: 20px;
     color: black;
     font-weight: bold;
+    
 }
 
-.post a:hover {
-    color: #4b7bec;
+div.new > a:hover {
+    color: #D4AF37;
 }
-/*---------------------------*/
 
+div.new > div.date {
+    padding: 5%;
+}
+
+/*SUPPORT*/
 div.support {
-    width: 14%;
-    margin-left: 1%;
-    text-align: center;
+    width: 30%;
     position: relative;
-    height: 100%;
 }
 
 div.input-support {
-    border: 2px solid;
+    border: 2px solid black;
     position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 20%;
+    width: 60%;
+    height: fit-content;
+    top: 30%;
+    left: 20%;
+    background: linear-gradient(#33d9b2,#344E41);
 }
 
 div.input-support h3 {
-    height: 100%;
     text-align: center;
 }
 
-div.input-support .titles {
-    height: 20%;
-}
-
 div.input {
-    margin-top: 1%;
-    height: 19%;
-    padding: 2px 10px;
+    margin: 5%;
 }
 
 div.input > input {
     width: 100%;
-    height: 70%;
-    border-radius: 10px;
+    padding: 5px;
 }
 
-button#sp {
-    width: 50%;
-    height: 80%;
-    border-radius: 10px;
-    background: linear-gradient(#3867d6,#4b7bec);
+#submit {
+   margin-left: 30%;
+   background-color: #D4AF37;
+   border: none;
+   border-radius: 25%;
+   padding: 5px;
+   font-weight: bold;
 }
-
 
 /*CSS FOOTER*/
 footer {
