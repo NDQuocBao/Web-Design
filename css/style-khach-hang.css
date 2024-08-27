@@ -1,0 +1,74 @@
+.project {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tit {
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+div.info {
+    background-color: #218c74;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.info h4 {
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+div.info button {
+    border-radius: 20px;
+    margin: 4px;
+    padding: 5px;
+}
+
+div.info a {
+    text-decoration: none;
+    color: black;
+}
+
+div.info button:hover {
+    background-color: aquamarine;
+}
+
+.info .price {
+    background-color: rgba(215, 251, 34, 0.6);
+    color: red;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0;
+}
+
+div.banks {
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+div.bank {
+    margin: 1rem;
+}
+
+div.bank a img {
+    width: 150px;
+    height: 60px;
+}

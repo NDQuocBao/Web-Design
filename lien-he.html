@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý chung cư</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style-lien-he.css"/>
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+
+<body>
+    <div id="gototop">
+        <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <header class="flex">
+        <img src="images/logo.png" alt="Logo">
+        <h1>MASTERI CENTRE POINT</h1>
+        <div></div>
+    </header>
+    <nav class="flex" id="menu">
+        <div id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbars">
+            <ul class="menu flex" id="left">
+                <li><a href="trang-chu.html">TRANG CHỦ</a></li>
+                <li><a href="tin-tuc.html">TIN TỨC</a></li>
+                <li class="sub">
+                    <a href="#">DỊCH VỤ</a>
+                    <ul class="menu subcontent">
+                        <li><a href="dich-vu.html#ve-sinh">Vệ Sinh</a></li>
+                        <li><a href="dich-vu.html#bao-tri">Bảo Trì</a></li>
+                        <li><a href="dich-vu.html#thanh-toan">Thanh Toán</a></li>
+                        <li><a href="dich-vu.html#khac">Khác</a></li>
+                    </ul>
+                </li>
+                <li class="sub">
+                    <a href="khach-hang.html">KHÁCH HÀNG</a>
+                    <ul class="menu subcontent">
+                        <li><a href="khach-hang.html#duan">Dự án</a></li>
+                        <li><a href="khach-hang.html#doitac">Đối tác</a></li>
+                    </ul>
+                </li>
+                <li><a href="lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+            <ul class="menu flex" id="right">
+                <li><input type="text" placeholder="Tìm kiếm..."></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="dang-nhap.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="info">
+                <button>Liên hệ với chúng tôi</button>
+                <h1>Thông tin liên lạc</h1>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Số 6 đường D1, Đại đô thị Vinhomes Grand Park, P. Long Bình, TP. Thủ Đức, TP. HCM</li>
+                    <li><i class="fa-solid fa-envelope"></i> Email: sales@masterisehomes.com</li>
+                    <li><i class="fa-solid fa-phone"></i> Hotline: 0828 159 159</li>
+                </ul>
+            </div>
+            <div class="form">
+                <div>
+                    <span>Họ và tên</span>
+                    <input type="text" placeholder="Họ và tên" required>
+    
+                    <span>Điện thoại</span>
+                    <input type="text" placeholder="Số điện thoại" required>
+    
+                    <span>Email</span>
+                    <input type="email" placeholder="Email" required>
+    
+                    <span>Giải pháp quan tâm</span>
+                    <select required>
+                        <option value="">Chọn</option>
+                        <option value="solution1">Giải pháp 1</option>
+                        <option value="solution2">Giải pháp 2</option>
+                    </select>
+    
+                    <span>Khu vực</span>
+                    <select required>
+                        <option value="">Chọn</option>
+                        <option value="region1">Khu vực 1</option>
+                        <option value="region2">Khu vực 2</option>
+                    </select>
+    
+                    <span>Lời nhắn</span>
+                    <textarea></textarea>
+    
+                    <button type="submit">Hoàn tất</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <img src="images/logo.png" alt="logo" />
+            </div>
+            <div class="contact">
+                <h3>LIÊN HỆ:</h3>
+                <p>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</p>
+                <p>Email: Sales@masterisesaigon.com</p>
+            </div>
+            <div class="conect">
+                <h3>KẾT NỐI:</h3>
+                <a class="fb" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="ytb" href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <h2> &copy;Copyright 2024</h2>
+    </footer>
+</body>
+</html>
