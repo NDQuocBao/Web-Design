@@ -54,6 +54,7 @@ window.onscroll = function () {
         menu.style.left = 0;
         menu.style.right = 0;
         menu.style.opacity = 0.9;
+        menu.style.marginTop = 0;
     }
     else {
         gototop.style.display = "none";

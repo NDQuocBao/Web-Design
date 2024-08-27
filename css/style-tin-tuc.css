@@ -56,4 +56,8 @@ div.others-news a:hover {
     color: #ffa801;
 }
 
+.show {
+    display: block;
+}
+
 

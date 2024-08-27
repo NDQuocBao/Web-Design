@@ -1,4 +1,11 @@
 window.addEventListener("load", function () {
+    //TIN TỨC
+    let news = this.document.querySelectorAll(".main-news:not(:first-child)");
+    for (let n of news)
+        n.style.display = "none";
+
+    // let others = this.document.querySelectorAll("");
+    
     let book = this.document.querySelectorAll("#btn-ser");
     let form = this.document.querySelector(".form");
     for (let b of book)
@@ -84,4 +91,6 @@ window.addEventListener("load", function () {
                 }
             }
         });
+    
+    
 });

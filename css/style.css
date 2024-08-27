@@ -220,7 +220,11 @@ div.main-new {
     border-top: 2px solid #218c74;
 }
 
-div.main-new > div:first-child {
+div.main-new > h3 {
+    text-align: center;
+}
+
+div.main-new > div:nth-child(2) {
     width: 40%;
     margin: auto;
     padding: 1%;
