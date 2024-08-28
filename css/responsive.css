@@ -131,6 +131,32 @@ div#toggle{
     #btn-ser {
         height: 10%;
     }
+
+    /*KHÁCH HÀNG*/
+    div.project {
+        width: 50%;
+    }
+
+    /*LIÊN HỆ*/
+    .forms {
+        flex-direction: column;
+    }
+
+    .forms .info {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .forms .form {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    /*ĐĂNG NHẬP*/
+    div.table {
+        width: 50%;
+        margin: 20px;
+    }
 }
 
 /*MOBILE*/
@@ -164,6 +190,7 @@ div#toggle{
     footer > div div {
         padding: 15px;
     } 
+
     /*DỊCH VỤ*/
     section.container {
         flex-direction: column;
@@ -196,6 +223,35 @@ div#toggle{
 
     #btn-ser {
         height: 15%;
+    }
+
+    /*KHÁCH HÀNG*/
+    div.project {
+        width: 90%;
+    }
+
+    /*LIÊN HỆ*/
+    div.banks, .forms {
+        flex-direction: column;
+    }
+
+    .forms .info {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .forms .form {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    div.bank {
+        text-align: center;
+    }
+
+    /*ĐĂNG NHẬP*/
+    div.table {
+        width: 90%;
     }
 }
 
