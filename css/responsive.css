@@ -59,46 +59,13 @@ div#toggle{
     h1 ~ div {
         width: 100%;
     }
-    /*Post and Support*/
-    .services {
-        flex-wrap: wrap;
-    }
 
-    .services div.service {
-        width: 45%;
-        margin-top: 5%;
-    }
-
-    section.main {
-        flex-wrap: wrap;
-        margin-top: 10px;
-        height: 1000px;
-    }
-
-    div.posts {
+    /*TIN TỨC*/
+    div.news-content {
         width: 100%;
-        height: 50%;
     }
 
-    div.article div.img {
-        width: 100%;
-        float: none;
-    }
-
-    div.support {
-        height: 50%;
-        width: 50%;
-    }
-
-    div.input-support {
-        height: 70%;
-        top: 15%;
-    }
-
-    div.article p {
-        -webkit-line-clamp: 4;
-    }
-
+    /*DỊCH VỤ*/
     section.container {
         flex-direction: column;
     }
@@ -124,12 +91,16 @@ div#toggle{
         border: none;
     }
 
-    div.form input {
-        padding: 5px;
+    div.form > div {
+        margin: 2%;
     }
 
-    #btn-ser {
-        height: 10%;
+    div.form input {
+        padding: 1%;
+    }
+
+    div.thanhtoan {
+        width: 100%;
     }
 
     /*KHÁCH HÀNG*/
@@ -170,12 +141,46 @@ div#toggle{
         width: 100%;
     }
 
-    div.article p {
-        -webkit-line-clamp: 10;
+    div.services {
+        flex-wrap: wrap;
+    }
+
+    div.service {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    /*NEWS AND SUPPORT*/
+    section.main {
+        flex-direction: column;
+    }
+
+    div.news {
+        width: 100%;
+    }
+
+    div.new-current {
+        flex-direction: column;
+    }
+
+    div.new {
+        display: flex;
+    }
+
+    div.new a {
+        padding: 8px;
+    }
+
+    div.new-image {
+        width: 50%;
     }
 
     div.support {
-        width: 70%;
+        width: 100%;
+    }
+
+    div.input-support {
+        position: relative;
     }
 
     /*FOOTER*/
@@ -191,39 +196,20 @@ div#toggle{
         padding: 15px;
     } 
 
-    /*DỊCH VỤ*/
-    section.container {
+    /*TIN TUC*/
+    div.news-content {
         flex-direction: column;
     }
 
-    div.menu-ser {
+    div.main-news {
         width: 100%;
     }
 
-    div.contents-ser {
+    div.others-news {
         width: 100%;
     }
 
-    div.content-ser {
-        flex-direction: column;
-    }
-
-    div.content-ser div.ser {
-        width: 80%;
-    }
-
-    div.form {
-        width: 100%;
-        border: none;
-    }
-
-    div.form input {
-        padding: 5px;
-    }
-
-    #btn-ser {
-        height: 15%;
-    }
+    
 
     /*KHÁCH HÀNG*/
     div.project {

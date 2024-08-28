@@ -4,7 +4,20 @@ window.addEventListener("load", function () {
     for (let n of news)
         n.style.display = "none";
 
-    // let others = this.document.querySelectorAll("");
+    let others = this.document.querySelectorAll(".others-news a");
+    for (let o of others)
+        o.addEventListener('click', function () {
+            event.preventDefault();
+            let oNews = document.querySelectorAll(".main-news");
+            for (let n of oNews) {
+                n.classList.remove("show");
+                n.style.display = "none";
+            }
+            let id = this.getAttribute("href").slice(1,);
+            let showNew = document.getElementById(id);
+            showNew.style.display = "flex";
+        });
+
     
     let book = this.document.querySelectorAll("#btn-ser");
     let form = this.document.querySelector(".form");

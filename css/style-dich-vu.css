@@ -58,6 +58,7 @@ div.ser {
     background-color: #218c74;
     margin-top: 5%;
     position: relative;
+    border-radius: 5%;
 }
 
 div.ser h4 {
@@ -68,6 +69,7 @@ div.ser h4 {
 
 div.ser img {
     width: 100%;
+    border-radius: 5% 5% 0 0;
 }
 
 #btn-ser {
@@ -79,6 +81,7 @@ div.ser img {
     font-weight: bold;
     cursor: pointer;
     border: none;
+    border-radius: 20%;
 }
 
 #btn-ser:hover {

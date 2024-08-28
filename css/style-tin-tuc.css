@@ -42,7 +42,13 @@ div.others-news > div {
 
 div.others-news > div > div.titles {
     width: fit-content;
+    background-color: #218c74;
     border-radius: 10px 10px 0 0;
+    padding: 5px;
+}
+
+div.titles > h3 {
+    margin: 0;
 }
 
 div.others-news a {
@@ -56,8 +62,6 @@ div.others-news a:hover {
     color: #ffa801;
 }
 
-.show {
-    display: block;
-}
+
 
 
