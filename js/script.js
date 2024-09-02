@@ -38,7 +38,6 @@ window.addEventListener("load", function () {
         showSlide(currentIndex + 1);
     }, 4000);
 
-    
 });
 
 window.onscroll = function () {
@@ -71,6 +70,12 @@ function goToTop() {
     },10)   
 }
 
+//Ẩn hiện đăng nhập
+var modal = document.getElementById("LoginModal");    
+function showTable(obj) {
+    modal.style.display = "block";
+}
 
-
-
+function closeTable(obj) {
+    modal.style.display = "none";
+}

@@ -97,8 +97,6 @@ div.bank a img {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -108,13 +106,11 @@ div.bank a img {
     width: 80%;
     max-width: 600px;
     background-color: #fff;
-    text-align: center;
     position: relative;
 }
 
 .modal-content img {
     width: 100%;
-    height: auto;
 }
 
 .close {
