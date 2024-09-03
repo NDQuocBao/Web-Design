@@ -1,12 +1,37 @@
 
 window.addEventListener("load", function () {
-    /*ẩn hiện menu*/
+    //Ẩn hiện đăng nhập
+    var modal = document.getElementById("LoginModal");    
+    var icon = this.document.getElementById("user");
+    icon.addEventListener('click', function () {
+        modal.style.display = "block";
+    });
+    var exit = this.document.getElementById("exit");
+    exit.addEventListener('click', function () { 
+        modal.style.display = "none";
+    });
+    
+    //ẩn hiện menu
     var toggle = document.getElementById("toggle");
     toggle.onclick = function () {
         var menu = document.querySelector(".navbars");
         menu.classList.toggle("show")
     }
-
+    //kiem tra nhap lieu
+    const element = this.document.createElement("div");
+    element.classList.add("note");
+    const text = this.document.createTextNode("*Chưa nhập thông tin!");
+    element.appendChild(text);
+    let button = this.document.getElementById("submit");
+    button.addEventListener('click', function () { 
+        let datas = document.querySelectorAll(".input > input");
+        for (let data of datas)
+            if (data.value == "") {
+                data.style.borderColor = "red";
+                this.parentElement.prepend(element);
+            }         
+    });
+    
     const slides = document.querySelectorAll('.carousel-slide');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
@@ -37,40 +62,15 @@ window.addEventListener("load", function () {
     setInterval(() => {
         showSlide(currentIndex + 1);
     }, 4000);
-
-    const element = this.document.createElement("div");
-    element.classList.add("note");
-    const text = this.document.createTextNode("*Chưa nhập thông tin!");
-    element.appendChild(text);
-    let button = this.document.getElementById("submit");
-    button.addEventListener('click', function () { 
-        let datas = document.querySelectorAll(".input > input");
-        for (let data of datas)
-            if (data.value == "") {
-                data.style.borderColor = "red";
-                this.parentElement.prepend(element);
-            }         
-    });
-
-        //Ẩn hiện đăng nhập
-    var modal = document.getElementById("LoginModal");    
-    function showTable(obj) {
-        modal.style.display = "block";
-    }
-
-    function closeTable(obj) {
-        modal.style.display = "none";
-    }
-
 });
 
 window.onscroll = function () {
     var gototop = document.getElementById("gototop");
     var menu = document.getElementById("menu");
     if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-        //Go to top
+        //go to top
         gototop.style.display = "block";
-        //Menu
+        //menu
         menu.style.position = "fixed";
         menu.style.zIndex = 9;
         menu.style.top = 0;
@@ -93,5 +93,3 @@ function goToTop() {
             clearInterval(timer);
     },10)   
 }
-
-

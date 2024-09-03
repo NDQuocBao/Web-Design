@@ -134,8 +134,7 @@ div#toggle{
 }
 
 /*MOBILE*/
-@media  screen and (max-width:435px) {
-    
+@media  screen and (max-width:435px) {   
    div#toggle {
     padding: 15px;
    }
@@ -168,6 +167,7 @@ div#toggle{
 
     div.new {
         display: flex;
+        width: 100%;
     }
 
     div.new a {
@@ -211,8 +211,6 @@ div#toggle{
     div.others-news {
         width: 100%;
     }
-
-    
 
     /*KHÁCH HÀNG*/
     div.project {

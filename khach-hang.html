@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý chung cư</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/style-khach-hang.css">
-    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <script src="js/script.js"></script>
     <script src="js/script2.js"></script>
 </head>
 <body onload="init()">
@@ -29,7 +30,7 @@
                 <li><a href="trang-chu.html">TRANG CHỦ</a></li>
                 <li><a href="tin-tuc.html">TIN TỨC</a></li>
                 <li class="sub">
-                    <a href="#">DỊCH VỤ</a>
+                    <a href="dich-vu.html">DỊCH VỤ</a>
                     <ul class="menu subcontent">
                         <li><a href="dich-vu.html#ve-sinh">Vệ Sinh</a></li>
                         <li><a href="dich-vu.html#bao-tri">Bảo Trì</a></li>
@@ -49,7 +50,7 @@
             <ul class="menu flex" id="right">
                 <li><input type="text" placeholder="Tìm kiếm..."></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a onclick="showTable()"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#" id="user"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -221,7 +222,7 @@
     <nav>
         <div id="LoginModal" class="modal">
             <div class="Login-content">
-                <span class="close" onclick="closeTable()">&times;</span>
+                <span class="close" id="exit">&times;</span>
                 <div class="table">
                     <h1>Đăng nhập</h1>
                     <div class="box">
@@ -246,6 +247,5 @@
             </div>
         </div>
     </nav>
-    <script src="js/script.js"></script>
 </body>
 </html>

@@ -16,18 +16,20 @@ window.addEventListener("load", function () {
             showNew.style.display = "flex";
         });
     
+    //DICH VU
+        //form dat lich
     let book = this.document.querySelectorAll("#btn-ser");
     let form = this.document.querySelector(".form");
     for (let b of book)
         b.addEventListener('click', function () {
             form.setAttribute("style", "display: block;");
         });
-    
+    //an form
     let cancel = this.document.querySelector("button#btn-form-cancel");
     cancel.addEventListener('click', function () {
         form.style.display = "none";
      });
-
+    
     let contents = this.document.querySelectorAll(".contents-ser > div:not(:first-child)");
     for (let c of contents)
         c.setAttribute("style", "display: none;");
@@ -65,8 +67,8 @@ window.addEventListener("load", function () {
                 b.style.display = "block";
         }
     
-    let payment = this.document.querySelector(".payment");
     //ẩn phương thức thanh toán
+    let payment = this.document.querySelector(".payment");
     payment.style.display = "none";
     let pay = this.document.querySelectorAll("#pay");
     for (let p of pay)
@@ -103,8 +105,8 @@ window.addEventListener("load", function () {
         });
 });
 
-//Khách Hàng
-function init() {
+ //Khách Hàng
+ function init() {
     var modal = document.getElementById("imageModal");
     var modalImg = document.getElementById("modalImage");
     var closeModal = document.getElementsByClassName("close")[0];
@@ -114,10 +116,8 @@ function init() {
             var imgSrc = this.parentElement.querySelector('img').src;
             modalImg.src = imgSrc;
             modal.style.display = "block";
-    }
-
+        }
         closeModal.onclick = function() {
             modal.style.display = "none";
-    }
-
+        }
 }

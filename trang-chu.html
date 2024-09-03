@@ -8,10 +8,8 @@
     <link rel="shortcut icon" href="images/logo.png"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
-    
     <script src="js/script.js"></script>
     <script src="js/script2.js"></script>
-    
 </head>
 <body>
     <div id="gototop">
@@ -52,7 +50,7 @@
             <ul class="menu flex" id="right">
                 <li><input type="text" placeholder="Tìm kiếm..."></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a onclick="showTable()"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#" id="user"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>   
     </nav>
@@ -92,19 +90,19 @@
         <div class="services">
             <div class="service">
                 <img src="images/dichvu/ve-sinh.jpeg" alt="vesinh"/>
-                <div class="name" id="0"><a href="#">VỆ SINH</a></div>
+                <div class="name"><a href="dich-vu.html">VỆ SINH</a></div>
             </div>
             <div class="service">
                 <img src="images/dichvu/bao-tri.jpg" alt="baotri"/>
-                <div class="name" id="1"><a href="#">BẢO TRÌ</a></div>
+                <div class="name"><a href="dich-vu.html">BẢO TRÌ</a></div>
             </div>
             <div class="service">
                 <img src="images/dichvu/thanhtoan.jpg" alt="anninh"/>
-                <div class="name" id="2"><a href="#">THANH TOÁN</a></div>
+                <div class="name"><a href="dich-vu.html">THANH TOÁN</a></div>
             </div>
             <div class="service">
                 <img src="images/dichvu/khac.jpg" alt="CSKH"/>
-                <div class="name" id="3"><a href="#">KHÁC</a></div>
+                <div class="name"><a href="dich-vu.html">KHÁC</a></div>
             </div>
         </div>
     </nav>
@@ -156,7 +154,7 @@
     <nav>
         <div id="LoginModal" class="modal">
             <div class="Login-content">
-                <span class="close" onclick="closeTable()">&times;</span>
+                <span class="close" id="exit">&times;</span>
                 <div class="table">
                     <h1>Đăng nhập</h1>
                     <div class="box">
