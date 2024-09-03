@@ -1,5 +1,7 @@
 
 window.addEventListener("load", function () {
+    
+
     /*ẩn hiện menu*/
     var toggle = document.getElementById("toggle");
     toggle.onclick = function () {
@@ -38,6 +40,20 @@ window.addEventListener("load", function () {
         showSlide(currentIndex + 1);
     }, 4000);
 
+    const element = this.document.createElement("div");
+    element.classList.add("note");
+    const text = this.document.createTextNode("*Chưa nhập thông tin!");
+    element.appendChild(text);
+    let button = this.document.getElementById("submit");
+    button.addEventListener('click', function () { 
+        let datas = document.querySelectorAll(".input > input");
+        for (let data of datas)
+            if (data.value == "") {
+                data.style.borderColor = "red";
+                this.parentElement.prepend(element);
+            }         
+    });
+    
     
 });
 

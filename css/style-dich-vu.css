@@ -180,6 +180,7 @@ div.filter div button {
 div.filter div button:hover {
     background-color: #778ca3;
 }
+
 div.payment-method {
     margin: 5px;
 }
@@ -190,6 +191,9 @@ div.payment-method > a {
     color: black;
 }
 
+div.thanhtoan {
+    width: 80%;
+}
 
 div.payment-method > a:hover {
     border: 1px solid red;

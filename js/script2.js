@@ -3,21 +3,18 @@ window.addEventListener("load", function () {
     let news = this.document.querySelectorAll(".main-news:not(:first-child)");
     for (let n of news)
         n.style.display = "none";
-
+    let oNews = document.querySelectorAll(".main-news");
     let others = this.document.querySelectorAll(".others-news a");
     for (let o of others)
         o.addEventListener('click', function () {
             event.preventDefault();
-            let oNews = document.querySelectorAll(".main-news");
             for (let n of oNews) {
-                n.classList.remove("show");
                 n.style.display = "none";
             }
             let id = this.getAttribute("href").slice(1,);
             let showNew = document.getElementById(id);
             showNew.style.display = "flex";
         });
-
     
     let book = this.document.querySelectorAll("#btn-ser");
     let form = this.document.querySelector(".form");
@@ -68,14 +65,14 @@ window.addEventListener("load", function () {
                 b.style.display = "block";
         }
     
-    let payment = this.document.querySelector(".payment-methods");
+    let payment = this.document.querySelector(".payment");
     //ẩn phương thức thanh toán
     payment.style.display = "none";
     let pay = this.document.querySelectorAll("#pay");
     for (let p of pay)
         p.addEventListener('click', function () {
             //hiện pttt
-            payment.style.display = "flex"
+            payment.style.display = "block"
             //nhấn hủy ẩn
             let cancelPay = document.getElementById("cancel-pay");
             cancelPay.onclick = function () {
@@ -104,6 +101,4 @@ window.addEventListener("load", function () {
                 }
             }
         });
-    
-    
 });

@@ -246,6 +246,7 @@ div.new-current {
 }
 
 div.new {
+    width: 25%;
     margin: 2%;
     text-align: justify;
 }
@@ -263,7 +264,6 @@ div.new > a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
 }
 
 div.new > a:hover {
@@ -310,6 +310,13 @@ div.input > input {
    border-radius: 25%;
    padding: 5px;
    font-weight: bold;
+}
+
+.note {
+    color: red;
+    font-style: italic;
+    font-size: small;
+    padding: 10px;
 }
 
 /*CSS FOOTER*/
