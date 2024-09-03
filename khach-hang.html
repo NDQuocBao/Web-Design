@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style-khach-hang.css">
     <link rel="shortcut icon" href="images/logo.png" />
-    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
 </head>
-<body>
+<body onload="init()">
     <div id="gototop">
         <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
@@ -49,7 +49,7 @@
             <ul class="menu flex" id="right">
                 <li><input type="text" placeholder="Tìm kiếm..."></li>
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="dang-nhap.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a onclick="showTable()"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -62,7 +62,7 @@
                 <div class="info">
                     <img src="images/banner_1.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                     <div class="price">HOT</div> 
                 </div>
             </div>
@@ -70,7 +70,7 @@
                 <div class="info">
                     <img src="images/banner_2.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                     <div class="price">HOT</div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                 <div class="info">
                     <img src="images/banner_3.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                     <div class="price">HOT</div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="info">
                     <img src="images/banner_4.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                     <div class="price">HOT</div>
                 </div>
             </div>
@@ -101,28 +101,28 @@
                 <div class="info">
                     <img src="images/banner_1.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/banner_2.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/banner_3.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/banner_4.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Tôn Đức Thắng Phường Bến Nghé, Quận 1, Tp.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
         </div>
@@ -131,28 +131,28 @@
                 <div class="info">
                     <img src="images/khachhang/DA_1.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 2 Phạm Văn Bạch, Yên Hoà, Cầu Giấy, Hà Nội</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/khachhang/DA_2.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 69 Vũ Trọng Phụng, Thanh Xuân, Hà Nội</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/khachhang/DA_3.jpg" alt="SE" />
                     <h4>Địa chỉ: Nguyễn Hữu Thọ, Phước Kiến, Nhà Bè, TP.HCM</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
             <div class="project">
                 <div class="info">
                     <img src="images/khachhang/DA_4.jpg" alt="SE" />
                     <h4>Địa chỉ: Số 536 Nguyễn Văn Cừ, TP. Hạ Long, Tỉnh Quảng Ninh</h4>
-                    <button><a href="#">Xem chi tiết</a></button>
+                    <button class="butn">Xem chi tiết</button>
                 </div>
             </div>
         </div>
@@ -164,32 +164,42 @@
         <div class="banks">
             <div class="bank">
                 <p>NGÂN HÀNG BẢO LÃNH</p>
-                <a href="#"><img src="images/khachhang/DT_1.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_1.png" alt="Image"></a>
             </div>
             <div class="bank">
                 <p>THIẾT KẾ MẶT ĐỨNG</p>
-                <a href="#"><img src="images/khachhang/DT_2.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_2.png" alt="Image"></a>
             </div>
             <div class="bank">
                 <p>THIẾT KẾ NỘI THẤT</p>
-                <a href="#"><img src="images/khachhang/DT_3.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_3.png" alt="Image"></a>
             </div>
             <div class="bank">
                 <p>THIẾT KẾ CẢNH QUAN</p>
-                <a href="#"><img src="images/khachhang/DT_4.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_4.png" alt="Image"></a>
             </div>
         </div>
         <div class="banks">
             <div class="bank">
                 <p>QUẢN LÍ DỰ ÁN</p>
-                <a href="#"><img src="images/khachhang/DT_5.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_5.png" alt="Image"></a>
             </div>
             <div class="bank">
                 <p>QUẢN LÍ THẦU THI CÔNG</p>
-                <a href="#"><img src="images/khachhang/DT_6.png" alt="Techcombank"></a>
+                <a href="#"><img src="images/khachhang/DT_6.png" alt="Image"></a>
             </div>
         </div>
     </section>
+    <nav>
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <div>
+                    <span class="close">&times;</span>
+                    <img id="modalImage" src="" alt="Image" />
+                </div>
+            </div>
+        </div>
+    </nav>
     <footer>
         <div>
             <div>
@@ -208,5 +218,34 @@
         </div>
         <h2> &copy;Copyright 2024</h2>
     </footer>
+    <nav>
+        <div id="LoginModal" class="modal">
+            <div class="Login-content">
+                <span class="close" onclick="closeTable()">&times;</span>
+                <div class="table">
+                    <h1>Đăng nhập</h1>
+                    <div class="box">
+                        <input type="text" placeholder="Username"
+                        required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="box">
+                        <input type="password" placeholder="Password"
+                        required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="remember">
+                        <div><input type="checkbox">Ghi nhớ</div>
+                        <div><a href="#">Quên mật khẩu?</a></div>
+                    </div>
+                    <button type="submit" class="btn">Đăng nhập</button>
+                    <div class="register">
+                        <p>Bạn chưa có tài khoản? <a href="#">Đăng kí</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="js/script.js"></script>
 </body>
 </html>

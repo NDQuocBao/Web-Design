@@ -125,8 +125,11 @@ div#toggle{
 
     /*ĐĂNG NHẬP*/
     div.table {
-        width: 50%;
-        margin: 20px;
+        margin: 10px;
+    }
+
+    .Login-content {
+        width: 55%;
     }
 }
 
@@ -235,8 +238,18 @@ div#toggle{
         text-align: center;
     }
 
+    .modal-content {
+        width: 90% !important;
+        margin: 50% auto !important;
+    }
+
     /*ĐĂNG NHẬP*/
     div.table {
+        margin: 20px;
+    }
+
+    .Login-content {
+        margin: 40% auto;
         width: 90%;
     }
 }

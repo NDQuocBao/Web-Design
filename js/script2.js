@@ -102,3 +102,22 @@ window.addEventListener("load", function () {
             }
         });
 });
+
+//Khách Hàng
+function init() {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var closeModal = document.getElementsByClassName("close")[0];
+    var buttons = document.querySelectorAll(".butn");
+    for (var i = 0; i < buttons.length; i++)
+        buttons[i].onclick = function() {
+            var imgSrc = this.parentElement.querySelector('img').src;
+            modalImg.src = imgSrc;
+            modal.style.display = "block";
+    }
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+    }
+
+}

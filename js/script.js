@@ -1,7 +1,5 @@
 
 window.addEventListener("load", function () {
-    
-
     /*ẩn hiện menu*/
     var toggle = document.getElementById("toggle");
     toggle.onclick = function () {
@@ -53,8 +51,17 @@ window.addEventListener("load", function () {
                 this.parentElement.prepend(element);
             }         
     });
-    
-    
+
+        //Ẩn hiện đăng nhập
+    var modal = document.getElementById("LoginModal");    
+    function showTable(obj) {
+        modal.style.display = "block";
+    }
+
+    function closeTable(obj) {
+        modal.style.display = "none";
+    }
+
 });
 
 window.onscroll = function () {
@@ -86,7 +93,5 @@ function goToTop() {
             clearInterval(timer);
     },10)   
 }
-
-
 
 
